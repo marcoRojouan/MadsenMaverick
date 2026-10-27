@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bwc6vcttphvrv"]
+
+[ext_resource type="Script" uid="uid://dydfmmcq63o52" path="res://player.gd" id="1_xhfnw"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jcuds"]
+size = Vector3(0.28808594, 1, 0.22827148)
+
+[node name="Player" type="CharacterBody3D" unique_id=605358362]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+script = ExtResource("1_xhfnw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1360490367]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.0000002, -0.0019945055, 0.5072504, 0)
+shape = SubResource("BoxShape3D_jcuds")
+debug_color = Color(0.45818365, 0.5067815, 0.8341821, 1)
+
+[node name="Head" type="Node3D" parent="." unique_id=1479640701]
+
+[node name="Pov" type="Camera3D" parent="Head" unique_id=285103642]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0.91429806, -0.07706177)

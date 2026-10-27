@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b3f66r8v13luj"]
+
+[ext_resource type="PackedScene" uid="uid://bwc6vcttphvrv" path="res://Player.tscn" id="1_u52ul"]
+[ext_resource type="Texture2D" uid="uid://b2ch8knldaar2" path="res://Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="2_vonw3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oi3di"]
+albedo_texture = ExtResource("2_vonw3")
+
+[node name="Level" type="Node3D" unique_id=152314266]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=481398645]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0.03133154, 0)
+shadow_enabled = true
+
+[node name="Player" parent="." unique_id=605358362 instance=ExtResource("1_u52ul")]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1619295558]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.53173864, 0)
+use_collision = true
+size = Vector3(45.21289, 1.0379639, 45.895508)
+material = SubResource("StandardMaterial3D_oi3di")
