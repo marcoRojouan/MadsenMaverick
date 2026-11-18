@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://bwc6vcttphvrv"]
 
 [ext_resource type="Script" uid="uid://dydfmmcq63o52" path="res://player.gd" id="1_xhfnw"]
-[ext_resource type="PackedScene" uid="uid://6fcaufyni1oe" path="res://ak47.glb" id="2_kpjcp"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_dnhq4"]
 radius = 0.3
@@ -20,8 +19,4 @@ debug_color = Color(0.45818365, 0.5067815, 0.8341821, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.73, 0)
 
 [node name="Pov" type="Camera3D" parent="Head" unique_id=285103642]
-transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, -0.077)
-fov = 85.0
-
-[node name="ak472" parent="Head/Pov" unique_id=1033660110 instance=ExtResource("2_kpjcp")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.3221593, -0.15355253, -0.26795837)
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, -0.09605396, -0.077)
