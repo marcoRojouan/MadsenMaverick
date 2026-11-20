@@ -1,5 +1,10 @@
 [gd_scene format=3 uid="uid://bl0yuc1ri6jx1"]
 
+[ext_resource type="Texture2D" uid="uid://c3d1kbwo6w6do" path="res://Textures/Bark_TwistedTree.png" id="1_vhf1r"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8cpno"]
+albedo_texture = ExtResource("1_vhf1r")
+
 [node name="homeScene" type="Node3D" unique_id=655351133]
 
 [node name="MaisonMadsen" type="CSGCombiner3D" parent="." unique_id=477590457]
@@ -38,6 +43,7 @@ size = Vector3(0.8, 1.5, 1)
 [node name="CSGBox3D5" type="CSGBox3D" parent="MaisonMadsen" unique_id=109784177]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1196294, 1.5108315, -0.004492283)
 size = Vector3(0.2, 3.022705, 6.4)
+material = SubResource("StandardMaterial3D_8cpno")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="MaisonMadsen/CSGBox3D5" unique_id=815326029]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.33019638, 1.4841022)

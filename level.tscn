@@ -4,14 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://ci4a4s8id3nxx" path="res://glTF/CommonTree_5.gltf" id="2_aicyk"]
 [ext_resource type="PackedScene" uid="uid://dx8jms22j2wi" path="res://glTF/Bush_Common_Flowers.gltf" id="3_8b0r0"]
 [ext_resource type="PackedScene" uid="uid://brmdkmolq16bu" path="res://FBX (Unity)/Bush_Common.fbx" id="4_h6smj"]
-[ext_resource type="PackedScene" uid="uid://ckb3gv3c8s52g" path="res://FBX (Unity)/Clover_2.fbx" id="5_v5j5c"]
 [ext_resource type="PackedScene" uid="uid://dfidcsuth48kj" path="res://FBX (Unity)/RockPath_Round_Small_1.fbx" id="6_5pxul"]
 [ext_resource type="PackedScene" uid="uid://bwbge2i7ax02l" path="res://FBX (Unity)/Pebble_Round_5.fbx" id="7_fedht"]
 [ext_resource type="PackedScene" uid="uid://d0pk0fxs32387" path="res://FBX (Unity)/RockPath_Round_Small_3.fbx" id="8_4c15r"]
 [ext_resource type="PackedScene" uid="uid://pgw64lv25k6k" path="res://glTF/CommonTree_2.gltf" id="9_ait7k"]
 [ext_resource type="PackedScene" uid="uid://dtoc2md3ohvkw" path="res://FBX (Unity)/RockPath_Round_Small_2.fbx" id="10_42xju"]
 [ext_resource type="PackedScene" uid="uid://brsc31hxps0wx" path="res://FBX (Unity)/Pebble_Round_1.fbx" id="11_v7sqt"]
-[ext_resource type="PackedScene" uid="uid://c0cn3a6u2u5q0" path="res://FBX (Unity)/Mushroom_Common.fbx" id="12_ilwjd"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_jcuds"]
 size = Vector3(40, 0.2, 40)
@@ -49,72 +47,68 @@ mesh = SubResource("BoxMesh_jcuds")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground" unique_id=1878571702]
 shape = SubResource("BoxShape3D_8d5or")
 
-[node name="CommonTree_52" parent="Ground" unique_id=1653864637 instance=ExtResource("2_aicyk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2996206, 0.342772, 8.446894)
-
-[node name="Bush_Common_Flowers2" parent="Ground" unique_id=1384816819 instance=ExtResource("3_8b0r0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0674286, 0.3346952, 6.237445)
-
-[node name="Bush_Common" parent="Ground" unique_id=1018990665 instance=ExtResource("4_h6smj")]
-transform = Transform3D(0.9878147, 0, 0.15563451, 0, 1, 0, -0.15563451, 0, 0.9878147, 0.88308954, -0.39436856, 3.0688324)
-
-[node name="Bush_Common2" parent="Ground" unique_id=1004670726 instance=ExtResource("4_h6smj")]
-transform = Transform3D(0.9878147, 0, 0.15563451, 0, 1, 0, -0.15563451, 0, 0.9878147, -3.8289194, -0.3418378, -1.572916)
-
-[node name="Clover_2" parent="Ground" unique_id=1297865932 instance=ExtResource("5_v5j5c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3816463, -0.5560848, 3.2330441)
-
-[node name="RockPath_Round_Small_1" parent="Ground" unique_id=1574752856 instance=ExtResource("6_5pxul")]
-transform = Transform3D(0.951717, 0, 0.30697668, 0, 1, 0, -0.30697668, 0, 0.951717, -0.010592073, 0.09119481, 5.104268)
-
-[node name="Pebble_Round_5" parent="Ground" unique_id=1665640128 instance=ExtResource("7_fedht")]
-transform = Transform3D(-0.99815786, 0, 0.060670108, 0, 1, 0, -0.060670108, 0, -0.99815786, -0.55175257, 0.09793028, 4.3335924)
-
-[node name="RockPath_Round_Small_2" parent="Ground" unique_id=1630490993 instance=ExtResource("6_5pxul")]
-transform = Transform3D(-0.8845756, 0, -0.46639693, 0, 1, 0, 0.46639693, 0, -0.8845756, -1.4993334, 0.108882606, 1.3250513)
-
-[node name="RockPath_Round_Small_3" parent="Ground" unique_id=103125404 instance=ExtResource("8_4c15r")]
-transform = Transform3D(0.99764323, 0, 0.06861499, 0, 1, 0, -0.06861499, 0, 0.99764323, -2.5395603, 0.1077975, -2.4234746)
-
-[node name="RockPath_Round_Small_4" parent="Ground" unique_id=491359490 instance=ExtResource("6_5pxul")]
-transform = Transform3D(-0.9464698, 0, 0.3227925, 0, 1, 0, -0.3227925, 0, -0.9464698, -2.596843, 0.108882606, -3.8697176)
-
-[node name="RockPath_Round_Small_5" parent="Ground" unique_id=2044142643 instance=ExtResource("6_5pxul")]
-transform = Transform3D(-0.92480886, 0, 0.3804322, 0, 1, 0, -0.3804322, 0, -0.92480886, -2.163113, 0.108882606, -5.177077)
-
 [node name="CSGBakedMeshInstance3D" type="MeshInstance3D" parent="." unique_id=1150424387]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12)
 mesh = SubResource("ArrayMesh_y3bce")
 
-[node name="CommonTree_22" parent="." unique_id=1314289964 instance=ExtResource("9_ait7k")]
+[node name="MadsenGarden" type="Node3D" parent="." unique_id=1301000846]
+
+[node name="Bush_Common_Flowers2" parent="MadsenGarden" unique_id=1384816819 instance=ExtResource("3_8b0r0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0674286, 0.2346952, 6.237445)
+
+[node name="Bush_Common" parent="MadsenGarden" unique_id=1018990665 instance=ExtResource("4_h6smj")]
+transform = Transform3D(0.9878147, 0, 0.15563451, 0, 1, 0, -0.15563451, 0, 0.9878147, 0.88308954, -0.49436855, 3.0688324)
+
+[node name="RockPath_Round_Small_1" parent="MadsenGarden" unique_id=1574752856 instance=ExtResource("6_5pxul")]
+transform = Transform3D(0.951717, 0, 0.30697668, 0, 1, 0, -0.30697668, 0, 0.951717, -0.010592073, -0.008805193, 5.104268)
+
+[node name="Pebble_Round_5" parent="MadsenGarden" unique_id=1665640128 instance=ExtResource("7_fedht")]
+transform = Transform3D(-0.99815786, 0, 0.060670108, 0, 1, 0, -0.060670108, 0, -0.99815786, -0.55175257, -0.0020697191, 4.3335924)
+
+[node name="RockPath_Round_Small_2" parent="MadsenGarden" unique_id=1630490993 instance=ExtResource("6_5pxul")]
+transform = Transform3D(-0.8845756, 0, -0.46639693, 0, 1, 0, 0.46639693, 0, -0.8845756, -1.4993334, 0.008882605, 1.3250513)
+
+[node name="RockPath_Round_Small_3" parent="MadsenGarden" unique_id=103125404 instance=ExtResource("8_4c15r")]
+transform = Transform3D(0.99764323, 0, 0.06861499, 0, 1, 0, -0.06861499, 0, 0.99764323, -2.5395603, 0.007797502, -2.4234746)
+
+[node name="RockPath_Round_Small_4" parent="MadsenGarden" unique_id=491359490 instance=ExtResource("6_5pxul")]
+transform = Transform3D(-0.9464698, 0, 0.3227925, 0, 1, 0, -0.3227925, 0, -0.9464698, -2.596843, 0.008882605, -3.8697176)
+
+[node name="CommonTree_22" parent="MadsenGarden" unique_id=1314289964 instance=ExtResource("9_ait7k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.855277, 0.24277201, 6.5223856)
 
-[node name="RockPath_Round_Small_2" parent="." unique_id=790337091 instance=ExtResource("10_42xju")]
+[node name="RockPath_Round_Small_5" parent="MadsenGarden" unique_id=790337091 instance=ExtResource("10_42xju")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008223295, -4.991889e-06, 7.7013683)
 
-[node name="RockPath_Round_Small_3" parent="." unique_id=294129741 instance=ExtResource("10_42xju")]
+[node name="RockPath_Round_Small_6" parent="MadsenGarden" unique_id=294129741 instance=ExtResource("10_42xju")]
 transform = Transform3D(-0.9658713, 0, 0.05204079, 0, 0.9671349, 0, -0.052753095, 0, -0.95282954, 0.11302078, 0.007797733, 6.361296)
 
-[node name="RockPath_Round_Small_1" parent="." unique_id=628692356 instance=ExtResource("6_5pxul")]
+[node name="RockPath_Round_Small_7" parent="MadsenGarden" unique_id=628692356 instance=ExtResource("6_5pxul")]
 transform = Transform3D(0.89148164, 0, 0.45305705, 0, 1, 0, -0.45305705, 0, 0.89148164, -0.26392746, -0.003678713, 3.767612)
 
-[node name="Pebble_Round_5" parent="." unique_id=2021463067 instance=ExtResource("7_fedht")]
+[node name="Pebble_Round_6" parent="MadsenGarden" unique_id=2021463067 instance=ExtResource("7_fedht")]
 transform = Transform3D(0.9871565, 0, -0.15975621, 0, 1, 0, 0.15975621, 0, 0.9871565, 0.35086638, -0.023674732, 4.5679007)
 
-[node name="RockPath_Round_Small_4" parent="." unique_id=2146481029 instance=ExtResource("6_5pxul")]
+[node name="RockPath_Round_Small_8" parent="MadsenGarden" unique_id=2146481029 instance=ExtResource("6_5pxul")]
 transform = Transform3D(-0.86624247, 0, -0.49962375, 0, 1, 0, 0.49962375, 0, -0.86624247, -0.79232144, 0.008882608, 2.5558777)
 
-[node name="Pebble_Round_1" parent="." unique_id=801963840 instance=ExtResource("11_v7sqt")]
+[node name="Pebble_Round_1" parent="MadsenGarden" unique_id=801963840 instance=ExtResource("11_v7sqt")]
 transform = Transform3D(-0.9239537, 0, 0.38250417, 0, 1, 0, -0.38250417, 0, -0.9239537, -0.6097243, 0.0025185496, 1.905941)
 
-[node name="RockPath_Round_Small_5" parent="." unique_id=1435408769 instance=ExtResource("6_5pxul")]
+[node name="RockPath_Round_Small_9" parent="MadsenGarden" unique_id=1435408769 instance=ExtResource("6_5pxul")]
 transform = Transform3D(-0.9191425, 0, -0.39392516, 0, 1, 0, 0.39392516, 0, -0.9191425, -2.0141544, 0.00888237, 0.02803111)
 
-[node name="RockPath_Round_Small_6" parent="." unique_id=958107123 instance=ExtResource("10_42xju")]
+[node name="RockPath_Round_Small_10" parent="MadsenGarden" unique_id=958107123 instance=ExtResource("10_42xju")]
 transform = Transform3D(-0.9999998, 0, 0.0006383339, 0, 1, 0, -0.0006383339, 0, -0.9999998, -2.3439305, 0.007798448, -1.2418134)
 
-[node name="Pebble_Round_6" parent="." unique_id=1178845721 instance=ExtResource("7_fedht")]
+[node name="Pebble_Round_7" parent="MadsenGarden" unique_id=1178845721 instance=ExtResource("7_fedht")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8569722, -0.0053043417, -3.1285357)
 
-[node name="Mushroom_Common" parent="." unique_id=976052589 instance=ExtResource("12_ilwjd")]
-transform = Transform3D(0.45412636, 0, -0.20921107, 0, 0.5, 0, 0.20921107, 0, 0.45412636, -1.5410441, 0.017470492, 2.7298932)
+[node name="CommonTree_52" parent="MadsenGarden" unique_id=1653864637 instance=ExtResource("2_aicyk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.2996206, 0.24277201, 8.446894)
+
+[node name="RockPath_Round_Small_11" parent="MadsenGarden" unique_id=2044142643 instance=ExtResource("6_5pxul")]
+transform = Transform3D(-0.92480886, 0, 0.3804322, 0, 1, 0, -0.3804322, 0, -0.92480886, -2.163113, 0.008882612, -5.1770763)
+
+[node name="Bush_Common2" parent="MadsenGarden" unique_id=1004670726 instance=ExtResource("4_h6smj")]
+transform = Transform3D(0.9878147, 0, 0.15563451, 0, 1, 0, -0.15563451, 0, 0.9878147, -3.8289194, -0.4418378, -1.572916)
